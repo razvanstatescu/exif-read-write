@@ -1,6 +1,6 @@
 {
   "name": "exif-read-write",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package you can use to read and write exif data from an image.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -12,7 +12,7 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint",
     "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
+    "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
   "keywords": [
