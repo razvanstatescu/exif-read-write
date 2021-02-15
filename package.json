@@ -1,6 +1,6 @@
 {
   "name": "exif-read-write",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A package you can use to read and write exif data from an image.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
