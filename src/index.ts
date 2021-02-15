@@ -1,4 +1,4 @@
-//@ts-ignore
+// @ts-ignore
 import * as piexif from 'deskfy-piexifjs';
 
 export function getExifDataFromImage({ image }: { image: Blob }): Promise<string> {
@@ -24,9 +24,12 @@ export function addExifDataToImage({ image, data }: { image: Blob, data: string 
 }
 
 function dataURItoBlob(dataurl: string): Blob {
-    //@ts-ignore
-    let arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
-        bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
+    const arr = dataurl.split(',');
+    // @ts-ignore
+    const mime = arr[0].match(/:(.*?);/)[1];
+    const bstr = atob(arr[1]);
+    let n = bstr.length;
+    const u8arr = new Uint8Array(n);
     while (n--) {
         u8arr[n] = bstr.charCodeAt(n);
     }
