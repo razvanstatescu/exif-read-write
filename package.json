@@ -1,0 +1,36 @@
+{
+  "name": "exif-read-write",
+  "version": "1.0.0",
+  "description": "A package you can use to read and write exif data from an image.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "exif",
+    "image"
+  ],
+  "author": "Razvan Statescu",
+  "files": [
+    "lib/**/*"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "deskfy-piexifjs": "^1.5.3"
+  }
+}
