@@ -32,5 +32,9 @@
   },
   "dependencies": {
     "deskfy-piexifjs": "^1.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/razvanstatescu/exif-read-write.git"
   }
 }
