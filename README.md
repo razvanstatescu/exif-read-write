@@ -6,6 +6,10 @@ You can use this package to write/read exif metadata from an image. The package 
 
 `npm i exif-read-write`
 
+# Import
+
+`import {getExifDataFromImage, addExifDataToImage} from 'exif-read-write';`
+
 # Usage
 
 Get exif string `getExifDataFromImage({image})`
